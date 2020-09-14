@@ -22,7 +22,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapp-dev-155640-deployment/amplify-cfn-templates/auth/amplifyapp6839b515-cloudformation-template.yml",
         "logicalId": "authamplifyapp6839b515"
       },
-      "lastPushTimeStamp": "2020-09-10T20:24:35.078Z",
+      "lastPushTimeStamp": "2020-09-14T19:52:13.309Z",
       "output": {
         "AppClientSecret": "e2vt82jm3l8ucfrqpj7sop8t5lv1ant6ea8efmgra4khbtrv7nh",
         "UserPoolId": "us-east-2_n00RbJfGa",
@@ -33,6 +33,49 @@
         "UserPoolName": "amplifyapp6839b515_userpool_6839b515"
       },
       "lastPushDirHash": "K9mOGMgK0ML+3gLfMHgyW2Ff8i4="
+    }
+  },
+  "api": {
+    "notesapp": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "description": "demo"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "5xgwpljmo5fxzayvmr2sz4rogu",
+        "GraphQLAPIEndpointOutput": "https://wfc545arpra65fumkhqd4udjpi.appsync-api.us-east-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-rzptl7slhbcavjkmb4m5hd3z4e"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapp-dev-155640-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apinotesapp"
+      },
+      "lastPushTimeStamp": "2020-09-14T19:52:14.229Z",
+      "lastPushDirHash": "y4vqccRchOADgQ26z+z/zQ2RNm0="
+    }
+  },
+  "storage": {
+    "imagestorage": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapp-dev-155640-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storageimagestorage"
+      },
+      "lastPushTimeStamp": "2020-09-14T19:52:14.229Z",
+      "output": {
+        "BucketName": "my-bucket-name155640-dev",
+        "Region": "us-east-2"
+      },
+      "lastPushDirHash": "AdQRdQiluUc3VbuTJSWm4n5WgBI="
     }
   }
 }
